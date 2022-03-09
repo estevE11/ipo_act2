@@ -1,0 +1,16 @@
+.taula {
+    border-spacing: 0px;
+}
+
+.taula td {
+    padding: 5px;
+    border-bottom: 1px solid black;
+}
+
+.taula tr td:nth-child(3) {
+    padding-left: 30px;
+}
+
+.taula tr th:nth-child(3) {
+    padding-left: 30px;
+}
