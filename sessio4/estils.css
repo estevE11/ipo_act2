@@ -1,16 +1,67 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+    margin: auto;
+    max-width: 600px;
+}
+
+.est {
+    margin-top: 50px;
+}
+
+.west {
+    margin-top: 100px;
+}
+
 .taula {
     border-spacing: 0px;
+    width: 650px;
 }
 
 .taula td {
-    padding: 5px;
+    padding: 10px;
     border-bottom: 1px solid black;
 }
 
-.taula tr td:nth-child(3) {
-    padding-left: 30px;
+/* padding per la columna que conte els noms dels equips */
+.taula tr td:nth-child(2) {
+    padding-right: 30px;
 }
 
-.taula tr th:nth-child(3) {
-    padding-left: 30px;
+/* tercera fila */
+.taula tbody tr:nth-child(3) {
+    background-color: #fce5cd;
+}
+
+/* segona fila */
+.taula tr:nth-child(2) {
+    background-color: #efefef;
+}
+
+/* primera fila */
+.taula tbody tr:nth-child(1) {
+    background-color: #fff2cc;
+}
+
+/* la ultima fila */
+.taula tbody tr:nth-last-child(1) {
+    background-color: #f4cccc;
+}
+
+.taula thead th {
+    padding: 10px 0px;
+}
+
+.taula thead th:nth-child(2) {
+    text-align: left;
+    padding-left: 10px;
+}
+
+/*  alinar el els numeros de la columna de posicio a la
+dreta encara que no es noti perque tots tenen la mateixa
+longitud. A partir del 10 es veuria.*/
+.taula tbody tr td:nth-child(1) {
+    text-align: right;
 }
