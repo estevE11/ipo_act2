@@ -1,0 +1,151 @@
+body, .wrapper, .nav {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    --bg: #5555ef;
+    --w: 800px;
+}
+
+.container {
+    margin: auto;
+    width: var(--w);
+}
+
+.nav-wrapper {
+    background-color: var(--bg);
+    height: 50px;
+}
+
+.form-wrapper {
+    background-color: var(--bg);
+    margin-top: 10px;
+}
+
+.nav {
+    list-style: none;
+    background-color: var(--bg);
+}
+
+.nav li {
+    background-color: var(--bg);
+    height: 35px;
+    float: left;
+    padding: 5px;
+    margin-top: 0px;
+    transition: all 1;
+    font-size: 25px;
+    margin-top: 10px;
+    padding: 0px 20px;
+}
+
+.nav li:hover {
+    border-bottom: 5px solid black;
+}
+
+.nav li:nth-child(1) {
+    font-size: 30px;
+    margin-top: 5px;
+}
+
+.nav li:nth-child(1):hover {
+    border: 0;
+}
+
+
+.nav li a {
+    color: white;
+    text-decoration: none;
+}
+
+.news ul {
+    list-style: none;
+    max-width: 200px;
+}
+
+.news ul li:nth-child(1) {
+    color: white;
+    transition: none;
+    background-color: #3b3bc1;
+}
+
+.news ul li:nth-child(1):hover {
+    margin-left: -20px;
+}
+
+.news ul li {
+    margin-left: -20px;
+    padding: 10px 10px;
+    background-color: #5757e3;
+    transition: margin-left 0.3s; /* Safari and Chrome */
+}
+
+.news ul li:hover {
+    margin-left: 0px;
+}
+
+.news ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* sessio 5 */
+
+.imgs {
+    margin-top: -12px;
+    overflow: hidden;
+}
+
+.imgs .img-text {
+    color: white;
+    font-size: 20px;
+    position: relative;
+    z-index: 9999;
+}
+
+.img-text#f1 {
+    left: 100px;
+    top: 60px;
+}
+
+.img-text#gsw {
+    left: 12px;
+    top: 60px;
+}
+
+.imgs .img-wrapper a {
+    text-decoration: none;
+}
+
+.imgs .img-wrapper {
+    width: 220px;
+    overflow: hidden;
+    height: 130px;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.imgs img {
+    margin-top: -22px;
+    object-fit: cover;
+    width: 220px;
+    height: 130px;
+    transform-origin: 50% 50%;
+    transition: transform .8s, visibility .25s ease-in, filter, .8s;
+}
+
+.imgs .img-wrapper:hover img {
+  transform: scale(1.2);
+  filter: brightness(70%);
+}
+
+.form form {
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    width: 412px;
+    margin: auto;
+}
+
+.form input {
+    margin-left: 40px;
+}
